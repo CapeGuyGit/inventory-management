@@ -41,8 +41,9 @@ if Ask_user.upper() == "APRO" or Ask_user.upper() == "ADD PRODUCT":
         format = csv.DictWriter(data, fieldnames=fieldnames)
 
         # not going to use the header() if you want to know what
-        # it does visit this link :-
-        # or got to my login-system-with-csv-files repository
+        # it does visit this link :- https://github.com/CapeGuyGit/Login-system-with-csv-file
+        # or got to my https://github.com/CapeGuyGit/Login-system-with-csv-file repository
+        
 
         format.writerow({"product": name, "date": date, "serial_no": serail__no, "price": price, "tax": tax, "total": total})
         print("\n\nProduct was added!")
